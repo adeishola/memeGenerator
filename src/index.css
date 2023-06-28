@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'bytes'
+    'Img';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem, 1fr;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+}
+
+#meme {
+    height: 100px;
+    /* margin: auto; */
+}
+
+h2 {
+    margin-right: 35rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+h4 {
+    margin: auto;
+    /* text-transform: capitalize; */
+    color: white;
+}
+
+.bytes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    margin-top: 2rem;
+    width: 30rem;
+    margin-inline: 0.5rem;
+}
+
+button {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background-color: purple;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#get {
+    height: 15px;
+}
+
+span {
+    margin-left: 2rem;
+}
+
+.Img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Img img{
+    border: solid;
+    color: purple;
+    border-radius: 1rem;
+    /* margin-right: 21rem; */
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.meme--text.top{
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: 35rem;
+    color:brown;
+}
+.meme--text.bottom{
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: 35rem;
+    color: brown;
+}
